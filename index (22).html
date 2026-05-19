@@ -2,54 +2,7 @@
 <html lang="ar" dir="rtl">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-    <title>المنصة الإدارية المتكاملة | جامعة جدة</title>
-    <!-- المكتبات -->
-    <script src="https://cdn.jsdelivr.net/npm/dexie@3.2.4/dist/dexie.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
-    <script src="https://cdn.sheetjs.com/xlsx-0.20.2/package/dist/xlsx.full.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.16.105/pdf.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/3.0.6/purify.min.js"></script>
-    <style>
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-      }
-      body {
-        font-family: "Segoe UI", "Cairo", Tahoma, sans-serif;
-        background: #f5f7fa;
-      }
-      :root {
-        --uj-navy: #002b49;
-        --uj-gold: #c5a059;
-        --uj-shadow: 0 12px 25px -8px rgba(0, 0, 0, 0.1);
-        --uj-border-radius: 20px;
-      }
-      .login-container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        min-height: 100vh;
-        background: linear-gradient(145deg, #001f34, #002b49);
-        position: fixed;
-        inset: 0;
-        z-index: 2000;
-      }
-      .login-card {
-        background: white;
-        padding: 2rem;
-        border-radius: 32px;
-        width: 480px;
-        text-align: center;
-        box-shadow: 0 30px 45px rgba(0, 0, 0, 0.25);
-        border-top: 6px solid var(--uj-gold);
-      }
-      .login-card h2 {
-        color: var(--uj-navy);
-        font-size: 28px;
-        margin-bottom: 5px;
-      }
+    <meta name="viewport" content="width=device-width,   }
       .login-card .dept-name {
         color: var(--uj-gold);
         font-weight: 600;
@@ -59,40 +12,7 @@
         padding-bottom: 5px;
       }
       .login-input {
-        width: 100%;
-        padding: 12px;
-        margin: 8px 0;
-        border-radius: 40px;
-        border: 1px solid #cbd5e1;
-        text-align: right;
-      }
-      .login-btn {
-        width: 100%;
-        padding: 12px;
-        background: var(--uj-navy);
-        color: white;
-        border: none;
-        border-radius: 40px;
-        cursor: pointer;
-        font-weight: bold;
-        transition: 0.2s;
-      }
-      .login-btn:hover {
-        background: var(--uj-gold);
-        color: var(--uj-navy);
-        transform: translateY(-2px);
-      }
-      .platform {
-        display: none;
-        direction: rtl;
-      }
-      .sidebar {
-        position: fixed;
-        right: 0;
-        top: 0;
-        width: 300px;
-        height: 100%;
-        background: linear-gradient(180deg, #002b49, #001f34);
+        width: 100%;kground: linear-gradient(180deg, #002b49, #001f34);
         color: white;
         padding: 20px;
         overflow-y: auto;
@@ -101,52 +21,6 @@
       }
       .sidebar h3 {
         color: var(--uj-gold);
-        text-align: center;
-        margin-bottom: 20px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 8px;
-      }
-      .user-card {
-        background: rgba(255, 255, 255, 0.1);
-        border-radius: 20px;
-        padding: 12px;
-        margin-bottom: 20px;
-        border-right: 4px solid var(--uj-gold);
-      }
-      .menu-btn {
-        display: block;
-        width: 100%;
-        padding: 10px;
-        margin: 6px 0;
-        background: rgba(255, 255, 255, 0.05);
-        border: none;
-        color: #e2e8f0;
-        text-align: right;
-        border-radius: 40px;
-        cursor: pointer;
-        transition: 0.2s;
-      }
-      .menu-btn:hover {
-        background: rgba(197, 160, 89, 0.2);
-        transform: translateX(-3px);
-      }
-      .menu-btn.active {
-        background: var(--uj-gold);
-        color: var(--uj-navy);
-        font-weight: bold;
-      }
-      .logout-btn {
-        background: rgba(220, 38, 38, 0.8);
-        margin-top: 30px;
-      }
-      .main {
-        margin-right: 310px;
-        padding: 25px;
-      }
-      .notes-widget {
-        background: white;
         border-radius: 24px;
         padding: 12px 20px;
         margin-bottom: 25px;
